@@ -1,0 +1,29 @@
+### Places Index
+GET http://localhost:3000/places.json
+
+### Places Create
+POST http://localhost:3000/places.json
+Content-Type: application/json
+
+{
+"name": "Billings, Montana",
+"description": "Billings is an industrial city located in south-central Montana.  It is home to over 200,000 people.",
+"image_url": "https://www.destinationmontana.com/wp-content/uploads/2018/01/billings-montana.jpg",
+"country": "USA",
+"latitude": 45.787636,
+"longitude": -108.489304
+}
+
+### Places Show
+GET http://localhost:3000/places/1.json
+
+### Places Update
+PATCH http://localhost:3000/places/4.json
+Content-Type: application/json
+
+{
+"description": "Billings is an industrial city located in south-central Montana.  It is home to over 200,000 people.  It also has many restaurants."
+}
+
+### Places Destroy
+DELETE http://localhost:3000/places/5.json
